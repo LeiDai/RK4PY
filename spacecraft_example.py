@@ -1,7 +1,7 @@
 """
 Created on Sun Dec 28 20:19:47 2014
 
-@author: Administrator
+@author: Ronald.Dai
 """
 
 """
@@ -21,7 +21,7 @@ y(1) = [y0(1),y1(1),y2(1),y3(1)]=[r(1),r(2),theta(1),theta(2)]=[y1,y0*y3^2-GM/y0
 """
 
 import numpy as np
-import run_kut4 as rk4
+import RK as RK
 import printSoln as psl
 import matplotlib.pyplot as plt
 
@@ -39,5 +39,5 @@ y = np.array([7.15014e6,0,0,0.937045e-3])
 h = 50
 freq = 2
 
-X,Y = rk4.integrate(F,x,y,xstop,h)
+X,Y = RK.integrate_RK4(F,x,y,xstop,h)
 psl.printSoln(X,Y,freq)
