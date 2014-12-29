@@ -6,7 +6,7 @@ Created on Thu Dec 25 21:21:22 2014
 """
 
 import numpy as np
-import matplotlib.pyplot as plt\
+#import matplotlib.pyplot as plt
 
 """
 the runge-kutta method with 4order
