@@ -39,7 +39,7 @@ def integrate_RK5(F,x,y,xstop,h,tol=1e-6):
     def run_kut5(F,x,y,h):
         C = np.array([37/378,0,250/621,125/594,0,512/1771])
         D = np.array([2825/27648,0,18575/48384,13525/55296,277/14336,1/4])
-        n = len(Y)
+        n = len(y)
         K = np.zeros((6,n))
         K[0] = h*F(x,y)
         K[1] = h*F(x+h/5,y+K[0]/5)
