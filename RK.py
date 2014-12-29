@@ -37,5 +37,6 @@ the adaptive runge-kutta method with 4order working with cash-karp coefficients
 def integrate_RK5(F,x,y,xstop,h):
     
     def run_kut5(F,x,y,h):
-        C = np.array([])
+        C = np.array([37/378,0,250/621,125/594,0,512/1771])
+        D = np.array([])
     
